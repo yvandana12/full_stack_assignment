@@ -17,14 +17,10 @@
             Enter day prefrence: <input type="text" name="day" placeholder="input your address"><br><br>
             Enter start time prefrence: <input type="text" name="time1" placeholder="eg 9:00 AM"><br><br>
             Enter end time prefrence: <input type="text" name="time2" placeholder="eg 12.00 AM"><br><br>
-            {%if status%}
-                <p>{{status}}</p>
-                <button type="submit"
-                    class="bg-black hover:bg-gray-500 rounded-lg text-white p-2 px-4 m-2">
-                    <p class="font-semibold text-xs">Book Slot</p>
-                    </button>
-            {%endif%}
+            
         <input type="submit">
+
+        {% comment %} to show a button if slot is avilable  {% endcomment %}
     </form><br>
     </div>
 </body>
