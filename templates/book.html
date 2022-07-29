@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <div>
+        {% comment %} The request will contain the student's name, email address and their preferred day and time slot for the class. {% endcomment %}
+        {% comment %} Input will be a url request with post paramenters set  {% endcomment %}
+        <form method="POST" action = "">
+        {% comment %} to show a button if slot is avilable  {% endcomment %}
+        {%if status%}
+                <p>{{status}}</p>
+                <input type="submit" name="book" placeholder="Book Now">
+        {%endif%}
+    </form><br>
+    </div>
+</body>
+</html>
